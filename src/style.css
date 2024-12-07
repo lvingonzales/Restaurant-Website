@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    background-color: #fffbeb;
+}
+
+header {
+    display: grid;
+    height: 150px;
+    grid-template-rows: 100px 50px;
+    min-width: 200px;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 0px 1px black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    background-color: #d97706;
+    border: 1px solid #78350f;
+}
+
+button:hover {
+    background-color: #78350f;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+}
+
+
+.container {
+    overflow: scroll;
+}
+
+.container > * {
+    border: 1px solid;
+}
+
+.featured {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.featured>* {
+    margin-top: 150px;
+}
+
+.featured-photo {
+    background-color: red;
+    width: 600px;
+    height: 400px;
+}
+
+.featured-info {
+    background-color: red;
+    width: 500px;
+    height: 300px;
+}
+
+.testimonial {
+    height: 500px;
+}
+
+.quote-banner {
+
+}
+
+.gallery {
+    height: 600px;
+}
