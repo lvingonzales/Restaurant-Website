@@ -1,5 +1,8 @@
 import {CreateHomePage} from "./home.js";
+import {CreateMenuPage} from "./menu.js";
+import {CreateAboutPage} from "./about.js";
 import "./style.css";
+import "./style-home.css";
 
 function PageIndex () {
     const buttons = document.querySelectorAll("button");
