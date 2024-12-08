@@ -4,6 +4,7 @@ import {CreateAboutPage} from "./about.js";
 import "./style.css";
 import "./style-home.css";
 import "./style-menu.css";
+import "./style-about.css";
 
 function PageIndex () {
     const buttons = document.querySelectorAll("button");
@@ -22,7 +23,7 @@ function PageIndex () {
                 CreateMenuPage();
                 break;
             case 'about':
-                console.log ("Loaded About");
+                CreateAboutPage();
                 break;
             default:
                 CreateHomePage();
@@ -33,7 +34,7 @@ function PageIndex () {
         element.addEventListener("click", PageLoader);
     });
 
-    CreateMenuPage();
+    CreateHomePage();
 }
 
 PageIndex();
