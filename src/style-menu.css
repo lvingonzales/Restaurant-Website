@@ -1,0 +1,38 @@
+.menu-wrapper {
+    display: grid;
+}
+
+.menu-panel {
+    height: 100%;
+    width: min(100%, 1000px);
+    background-color: #fffbeb;
+    justify-self: center;
+    border: 10px inset #78350f;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.menu-item + .menu-item {
+    border-top: 3px solid #78350f;
+}
+
+.menu-item {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-text > * {
+    margin: 0px;
+}
+
+.menu-item > img {
+    width: 10rem;
+    height: 10rem;
+}

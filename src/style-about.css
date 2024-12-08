@@ -1,0 +1,24 @@
+.about-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-panel {
+    background-color: #fffbeb;
+    width: min(100%, 500px);
+    height: 90%;
+    padding: 1rem;
+    border: 2px solid #78350f;
+    border-radius: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    text-justify: auto;
+}
+
+.about-panel > p + p {
+    border-top: 2px solid #78350f;
+    margin-top: 2rem;
+}
