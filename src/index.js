@@ -1,4 +1,35 @@
 import {CreateHomePage} from "./home.js";
 import "./style.css";
 
-CreateHomePage();
+function PageIndex () {
+    const buttons = document.querySelectorAll("button");
+    const containerDiv = document.querySelector(".container");
+
+    function PageLoader (e) {
+        while (containerDiv.firstChild) {
+            containerDiv.removeChild(containerDiv.firstChild);
+        }
+
+        switch (e.target.dataset.value) {
+            case 'home':
+                CreateHomePage();
+                break;
+            case 'menu':
+                console.log ("Loaded Menu");
+                break;
+            case 'about':
+                console.log ("Loaded About");
+                break;
+            default:
+                CreateHomePage();
+        }
+    }
+
+    buttons.forEach(element => {
+        element.addEventListener("click", PageLoader);
+    });
+
+    CreateHomePage();
+}
+
+PageIndex();
