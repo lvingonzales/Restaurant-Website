@@ -3,6 +3,7 @@ import {CreateMenuPage} from "./menu.js";
 import {CreateAboutPage} from "./about.js";
 import "./style.css";
 import "./style-home.css";
+import "./style-menu.css";
 
 function PageIndex () {
     const buttons = document.querySelectorAll("button");
@@ -18,7 +19,7 @@ function PageIndex () {
                 CreateHomePage();
                 break;
             case 'menu':
-                console.log ("Loaded Menu");
+                CreateMenuPage();
                 break;
             case 'about':
                 console.log ("Loaded About");
@@ -32,7 +33,7 @@ function PageIndex () {
         element.addEventListener("click", PageLoader);
     });
 
-    CreateHomePage();
+    CreateMenuPage();
 }
 
 PageIndex();
